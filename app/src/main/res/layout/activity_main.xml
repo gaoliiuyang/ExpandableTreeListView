@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85mm"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimary"
+            android:text="标题"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30mm"
+            android:src="@mipmap/icon_filter" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20mm"
+        android:paddingBottom="30mm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82mm"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="16mm"
+                android:layout_height="10mm"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24mm"
+                android:singleLine="true"
+                android:text="测评结果"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="20mm"
+            android:layout_marginRight="30mm"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0mm"
+                android:layout_height="2mm"
+                android:layout_weight="1"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/tv_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20mm"
+                android:layout_marginRight="20mm"
+                android:text="基督教"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0mm"
+                android:layout_height="2mm"
+                android:layout_weight="1"
+                android:background="@color/dividerColor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="30mm"
+            android:layout_marginRight="30mm"
+            android:lineSpacingExtra="3mm"
+            android:text="议课去关注“教的东西是否有用，教的东西是否有价值”，关注学生不再像听课评课中那样只看其是否积极发言"
+            android:textColor="@color/textColorSecond"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="12mm"
+        android:background="@color/YT_f5f5f5" />
+
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20mm"
+        android:paddingBottom="30mm"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82mm"
+            android:gravity="center_vertical"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="16mm"
+                android:layout_height="10mm"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24mm"
+                android:singleLine="true"
+                android:text="分项详解"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15mm"
+            android:layout_marginLeft="40mm"
+            android:layout_marginRight="30mm">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExpandableTreeListView</string>
+    <string name="evaluation_one">白银</string>
+    <string name="evaluation_two">黄金</string>
+    <string name="evaluation_three">白金</string>
+    <string name="evaluation_four">钻石</string>
+    <string name="evaluation_five">王者</string>
+</resources>

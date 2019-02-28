@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="90mm">
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="16mm"
+        android:layout_height="10mm"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20mm"
+        android:layout_toLeftOf="@id/iv_array"
+        android:layout_toRightOf="@id/view_left"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_array"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="30mm"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_array_down" />
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1mm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30mm"
+        android:visibility="gone"
+        android:layout_marginRight="30mm"
+        android:background="@color/dividerColor" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="1mm"
+        android:layout_marginLeft="30mm"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30mm"
+        android:background="@color/dividerColor" />
+
+</RelativeLayout>
